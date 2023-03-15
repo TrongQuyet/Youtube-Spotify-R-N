@@ -1,0 +1,35 @@
+.container-search{
+    display: block;
+    height: 100%;
+    background-color: #222121;
+    overflow-y: scroll;
+    width: 85vw;
+    position: absolute;
+    right: 0;
+    .search{
+        padding-top: 30px;
+        padding-bottom: 100px;
+        width: 30%;
+        display: flex;
+        padding-left: 50px;
+        .input-search{
+            padding-left: 20px;
+            width: 100%;
+            height : 40px;
+            border-radius: 20px;
+            
+        }
+        .fasearch{
+            color: white;
+            font-size: 40px;
+            padding-left: 10px;
+        }
+    }
+    .result-search {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-left: 50px
+    }
+}

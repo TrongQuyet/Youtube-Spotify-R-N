@@ -1,0 +1,46 @@
+.popular {
+    display: block;
+    height: 100%;
+    background-color: #222121;
+    overflow-y: scroll;
+    width: 85vw;
+    position: absolute;
+    right: 0;
+    h2{
+        color: white;
+        padding-bottom: 40px;
+        font-family: cursive;
+        font-size: 60px;
+    }
+        .popular-container {
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            flex-wrap: wrap;
+            padding-left:45px;
+        }
+    .top-popular {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 20px;
+        background-color: #222121;
+        button.Premium.Plans {
+            border-radius: 13px;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+            padding:8px;
+            border-color: white ;
+        }
+        button.Account {
+            border: none;
+            border-radius: 13px;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+        }
+    }
+
+    
+}

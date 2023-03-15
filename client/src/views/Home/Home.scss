@@ -1,0 +1,12 @@
+.App {
+    height: 100vh;
+    .logo {
+        height: 120px;
+        cursor: pointer;
+    }
+    .icon {
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
