@@ -1,0 +1,50 @@
+.container-tiktok{
+    
+        .logotiktok {
+            height: 115px;
+            float: left;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+            background-color: #f3f3f3;
+            overflow: hidden;
+            margin-top: 30px;
+          }
+          
+          .search-container input[type="text"] {
+            flex: 1;
+            padding: 13px;
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            color: #333;
+            outline: none;
+            
+          }
+          
+          .search-container button[type="submit"] {
+            border: none;
+            background-color: transparent;
+            color: #333;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+          }
+          
+          .search-container button[type="submit"]:hover {
+            color: #555;
+          }
+          
+          .fa-search {
+            font-size: 20px;
+            transition: all 0.2s;
+          }
+          
+          .search-container:hover .fa-search {
+            transform: scale(1.2);
+          }
+    
+}

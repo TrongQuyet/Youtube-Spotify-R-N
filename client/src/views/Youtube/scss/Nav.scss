@@ -34,15 +34,18 @@
             height: 38px;
             margin-top: 24px;
             border-radius: 20px 20px 20px 20px;
-            font-size:18px
+            font-size:18px;
+            padding: 20px;
+            
 
         }
         .icon-search{
-            height: 39px;
+
             position: absolute;
-            top: 24px;
-            right: 0;
-            border-radius: 20px 20px 20px 20px;
+            top: 50%;
+            right: 10px;
+            cursor: pointer;
+            transform: translateY(-50%);
             
 
         }

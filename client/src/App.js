@@ -8,12 +8,14 @@ import Sidebar from "./views/Spotify/Sidebar"
 import Homesp from "./views/Spotify/Homespotify"
 import Search from "./views/Spotify/Search"
 import Bottom from "./views/Spotify/Bottom"
+import Navtiktok from "./views/Tiktok/Nav-Tiktok"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom";
 function App(props) {
   const [isshow,setisshow] = useState(true)
   const [query,setquery] = useState('')
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  //mở khóa chức năng login
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const childRef = useRef();
   let handlesearch= (query)=> {
     setquery(query)
@@ -26,6 +28,7 @@ function App(props) {
   
   <Routes>
     <Route path="/" element={<Home/>}></Route>
+    <Route path="/tiktok" element={<><Navtiktok/></>}></Route>
     <Route path="/spotify" element={<><Sidebar/><Homesp/><Bottom/></>}></Route>
     <Route path="/spotify/search" element={<><Sidebar/><Search/><Bottom/></>}></Route>
     <Route path="/youtube" element={<>

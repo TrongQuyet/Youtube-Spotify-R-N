@@ -1,5 +1,5 @@
 import { useState,React,useEffect } from "react";
-import { FaUser } from 'react-icons/fa'
+import { FaUser,FaSearch } from 'react-icons/fa'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "react-simple-keyboard/build/css/index.css";
@@ -27,10 +27,12 @@ const Nav = (props) => {
   const [query,setquery] = useState('')
   //xử lý search
   let search =()=>{
-    if(isLoggedIn===true){
-      props.handlesearch(query)
+    // if(isLoggedIn===true){
+    //   props.handlesearch(query)
+    //   props.setisshow(false)
+    // }
+    props.handlesearch(query)
       props.setisshow(false)
-    }
 
 }
 //kiểm tra đăng nhập
@@ -211,7 +213,7 @@ const regiter=async()=> {
         </div>
         <div className="nav-midde ">
         <input className="input-search"   value={query} onKeyDown={(e) => something(e) } onChange={(event) =>setquery(event.target.value)} ></input>
-          <button className="icon-search" onClick={search}>Search</button>
+        <FaSearch className="icon-search" onClick={search}/>
         </div>
         <div className="nav-right">
         {avatar && isLoggedIn  ? (
